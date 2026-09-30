@@ -1,63 +1,65 @@
-# Attendance_Calc
+# Attendance Calculator
 
-A Python-based attendance calculator that helps calculate mandatory attendance requirements for multiple courses.
+## Overview
 
-## Features:
+Attendance Calculator is a Python-based command-line application that helps students calculate and monitor their attendance requirements across multiple courses.
 
-- Supports multiple courses
-- Takes total course lectures as input
-- Takes lectures attended and missed so far as input
-- Allows a custom mandatory attendance percentage
-- Calculates remaining number of lectures
-- Calculates the minimum number of future lectures that need to be attended
-- Calculates how many remaining lectures can be missed
-- Provides an attendance status
-- Displays a summary of all the courses
+The program takes course attendance information as input and determines the number of lectures remaining, the minimum number of lectures that need to be attended, the number of lectures that can still be missed, and the overall attendance status.
 
-## Requirements:
+The application supports multiple courses and provides a summary of all courses at the end.
 
-- Python 3.x
-- No external Python libraries are required
+---
 
-## Setup
+## Features
 
-1. Clone the repository:
+- Calculate attendance requirements for multiple courses
+- Calculate the number of lectures remaining
+- Calculate the minimum number of remaining lectures that need to be attended
+- Calculate how many remaining lectures can be missed
+- Display current overall attendance percentage
+- Display maximum possible attendance
+- Classify attendance status as:
+  - Safe
+  - Caution
+  - Danger
+  - Failed
+- Validate user input
+- Handle invalid numerical and percentage inputs
+- Display a summary of all entered courses
+- Includes a separate testing module for checking calculation and status logic
 
-   git clone https://github.com/YourUsername/attendance-calculator.git
+---
 
-2. Enter the project directory:
+## Technologies Used
 
-   cd attendance-calculator
+- Python 3
+- Python standard library
+- Command Line / Terminal
+- Git and GitHub
 
-3. Make sure Python 3.x is installed:
+No external Python packages are required.
 
-   python --version
+---
 
-## Running the Program
+## Screenshots
 
-Run the following command:
+### Main Program
 
-   python attendance_calculator.py
+![Main Program](Screenshots/Main_1.png), (Screenshots/Main_1.png)
 
-The program will ask for the number of courses and then collect the attendance information for each course.
+### Attendance Summary
 
-## Input Information
+![Attendance Summary](Screenshots/Summary.png)
 
-For each course, the program requires:
-
-- Course name
-- Total number of lectures in the course
-- Number of lectures attended so far
-- Number of lectures not attended so far
-- Mandatory overall attendance percentage
-
-## Output
-
-The program displays:
-
-- Current overall attendance percentage
-- Number of lectures remaining
-- Minimum lectures that need to be attended
-- Number of lectures that can still be missed
-- Attendance status
-- Final attendance summary for all courses
+Attendance-Calculator/
+│
+├── main.py
+├── input_handler.py
+├── validators.py
+├── attendance_calculator.py
+├── status_manager.py
+├── summary.py
+├── tests.py
+├── README.md
+├── statement.md
+└── .gitignore
